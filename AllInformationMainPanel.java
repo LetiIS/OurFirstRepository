@@ -19,7 +19,7 @@ public class AllInformationMainPanel extends JPanel {
     private List<ProfGroupRecordListPanel> list;
 
     public static void main(String[] args) {
-        JFrame f = new JFrame("TEST - ProfGroupRecordPanel");
+        JFrame f = new JFrame("TEST - ProfGroupRecordPanel");//тестировать класс List<ProfGroupRecordListPanel> который создает лист мини панелек
 
         f.setLayout(new GridLayout(1, 1));
         f.add(new AllInformationMainPanel(AllInformationMainPanel.createDataList(21, 1, EducationYear.getEducationYear("2013/2014"))));
@@ -38,6 +38,7 @@ public class AllInformationMainPanel extends JPanel {
 
     private void initPanels() {
         createTitle();
+        setLayout(new GridLayout(2, 1));
         setLayout(new GridLayout(1, 1));
         mainPanel = new JPanel();
         mainPanel.setLayout(new GridLayout(list.size() + 1, 1));
