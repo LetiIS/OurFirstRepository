@@ -6,7 +6,12 @@ CREATE TABLE public.Levels (
                 semCount INTEGER NOT NULL,
                 CONSTRAINT level_id PRIMARY KEY (level_Id)
 );
-
+CREATE TABLE public1.Levels1 (
+                level_Id1 INTEGER NOT NULL,
+                levelName1 VARCHAR NOT NULL,
+                semCount1 INTEGER NOT NULL,
+                CONSTRAINT1 level_id PRIMARY KEY (level_Id)
+);
 
 CREATE TABLE public.Departments (
                 department_Id INTEGER NOT NULL,
