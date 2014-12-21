@@ -10,8 +10,8 @@ public class GroupIdValue
     private String value;
 
     public GroupIdValue(int id, String value) {
-        this.id = id;
-        this.value = value;
+        this.id = id;//идентификатор 
+        this.value = value;//значение 
     }
 
     public GroupIdValue() {
